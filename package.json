@@ -1,18 +1,19 @@
 {
-    "name" : "basex",
+    "name" : "baseit",
     "version" : "0.0.1",
     "description" : "A node.js module handling non-standard Base encodings (Base24, Base36)",
-    "main" : "./index.js",
+    "main" : "./lib/baseit.js",
     "directories" : {
         "lib" : "./lib",
         "test" : "./test"
     },
     "repository" : {
         "type" : "git",
-        "url" : "http://github.com/diy/basex.git"
+        "url" : "http://github.com/diy/baseit.git"
     },
     "keywords" : [
         "Base10",
+        "Base12",
         "Base24",
         "Base36",
         "encode",
