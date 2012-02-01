@@ -36,7 +36,7 @@ baseit({
 
 ## Parameters
 ####input (Required)
-Integer or string to be converted
+Integer or string to be converted.
 
 ####to (Required)
 Target encoding integer. Example for Base24: { to: 24 }.
