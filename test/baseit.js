@@ -12,12 +12,12 @@ var suite   = vows.describe('BaseIt');
  */
 suite.addBatch({
 
-    'Encode 1296 to Base8': {
+    'Base10 "1296" to Base8': {
 
         topic: function() {
-            baseit.encode({
-                input: 1296, 
-                base: 8,
+            baseit({
+                input:  1296, 
+                to:     8,
             }, this.callback);
         },
 
@@ -25,40 +25,18 @@ suite.addBatch({
             assert.isString(obj);
         },
         
-        'is equal to "260"': function (err, obj) {
+        'expected result': function (err, obj) {
             assert.strictEqual(obj, "2420");
         }
 
     },
 
-    'Decode 2420 to Base10': {
+    'Base10 "1296" to Base36': {
 
         topic: function() {
-            baseit.decode({
-                input: "2420", 
-                base: 8, 
-            }, this.callback);
-        },
-
-        'is a number': function (err, obj) {
-            assert.isNumber(obj);
-        },
-        
-        'is equal to 1296': function (err, obj) {
-            assert.strictEqual(obj, 1296);
-        }
-
-    },
-
-    //
-
-    'Encode 1296 to Base24': {
-
-        topic: function() {
-            baseit.encode({
-                input: 1296, 
-                base: 24,
-                digits: 6,
+            baseit({
+                input:  "1296", 
+                to:     36,
             }, this.callback);
         },
 
@@ -66,39 +44,20 @@ suite.addBatch({
             assert.isString(obj);
         },
         
-        'is equal to "000260"': function (err, obj) {
-            assert.strictEqual(obj, "000260");
+        'expected result': function (err, obj) {
+            assert.strictEqual(obj, "100");
         }
 
     },
 
-    'Decode 260 to Base10': {
+    'Base12 "1000" to Base36 w/ padding': {
 
         topic: function() {
-            baseit.decode({
-                input: "000260", 
-                base: 24,
-            }, this.callback);
-        },
-
-        'is a number': function (err, obj) {
-            assert.isNumber(obj);
-        },
-        
-        'is equal to 1296': function (err, obj) {
-            assert.strictEqual(obj, 1296);
-        }
-
-    },
-
-    //
-    
-    'Encode 2176782335 to Base36': {
-
-        topic: function() {
-            baseit.encode({
-                input: 2176782335,
-                base: 36,
+            baseit({
+                input:  "1000", 
+                from:   12,
+                to:     36,
+                digits: 6
             }, this.callback);
         },
 
@@ -106,18 +65,18 @@ suite.addBatch({
             assert.isString(obj);
         },
         
-        'is equal to "100"': function (err, obj) {
-            assert.strictEqual(obj, "zzzzzz");
+        'expected result': function (err, obj) {
+            assert.strictEqual(obj, "0001c0");
         }
 
     },
-    
-    'Encode "2176782335" to Base36': {
+
+    'Base36 "zzzz" to Base10': {
 
         topic: function() {
-            baseit.encode({
-                input: "2176782335",
-                base: 36,
+            baseit({
+                input:  "zzzz", 
+                from:   36
             }, this.callback);
         },
 
@@ -125,8 +84,8 @@ suite.addBatch({
             assert.isString(obj);
         },
         
-        'is equal to "100"': function (err, obj) {
-            assert.strictEqual(obj, "zzzzzz");
+        'expected result': function (err, obj) {
+            assert.strictEqual(obj, "1679615");
         }
 
     },
@@ -136,9 +95,9 @@ suite.addBatch({
     'Encode "z3991z1" to Base36 (Invalid Base10 String)': {
 
         topic: function() {
-            baseit.encode({
-                input: "z3991z1",
-                base: 36,
+            baseit({
+                input:  "z3991z1",
+                to:     36,
             }, this.callback);
         },
         
