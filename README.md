@@ -38,8 +38,8 @@ baseit({
 ####input (Required)
 Integer or string to be converted.
 
-####to (Required)
-Target encoding integer. Example for Base24: { to: 24 }.
+####to (Optional)
+Target encoding integer. If not specified, "to" will default to 10. Example for Base24: { to: 24 }.
 
 ####from (Optional)
 Input encoding integer. If not specified, "from" will default to 10. Example for Base8: { from: 8 }.
