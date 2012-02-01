@@ -14,7 +14,7 @@ baseit({
 }, function (err, a) {
 	if (err) throw err;
 
-	console.log(a);		// "2KLC"
+	console.log(a);		// "2klc"
 });
 ````
 
@@ -30,7 +30,7 @@ baseit({
 }, function (err, a) {
 	if (err) throw err;
 
-	console.log(a);		// "0001N6"
+	console.log(a);		// "0001n6"
 });
 ````
 
