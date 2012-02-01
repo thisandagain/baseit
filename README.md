@@ -47,5 +47,8 @@ Input encoding integer. If not specified, "from" will default to 10. Example for
 ####digits (Optional)
 Minimum number of digits to return. Will append leading "zeros" to meet digit requirement. Example: { digits: 6 }
 
+## Why u no Base64!?
+Node.js already has a good way of [handling Base64 encoding](http://nodejs.org/docs/v0.3.1/api/buffers.html#new_Buffer).
+
 ## Testing
 	vows test/*

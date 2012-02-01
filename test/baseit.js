@@ -107,6 +107,21 @@ suite.addBatch({
 
     },
 
+    'Encode "1000" to Base36 (Invalid Base10 String)': {
+
+        topic: function() {
+            baseit({
+                input:  "1000",
+                to:     64,
+            }, this.callback);
+        },
+        
+        'returns error': function (err, obj) {
+            assert.isNotNull(err);
+        }
+
+    },
+
 })
 
 /**
