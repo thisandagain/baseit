@@ -1,29 +1,29 @@
 {
-    "name" : "baseit",
-    "version" : "0.0.1",
-    "description" : "A node.js module handling non-standard Base encodings (Base24, Base36)",
-    "main" : "./lib/baseit.js",
-    "directories" : {
-        "lib" : "./lib",
-        "test" : "./test"
-    },
-    "repository" : {
-        "type" : "git",
-        "url" : "http://github.com/diy/baseit.git"
-    },
-    "keywords" : [
+    "author": "DIY, Co. <help@diy.org> (http://diy.org)",
+    "name": "baseit",
+    "description": "A node.js module for handling non-standard 'Base' encodings (Base12, Base24, Base36, etc).",
+    "keywords": [
         "Base10",
         "Base12",
         "Base24",
         "Base36",
         "encode",
-        "decode"
+        "encoder",
+        "decode",
+        "decoder"
     ],
-    "author" : {
-        "name" : "DIY, Co.",
-        "url" : "http://github.com/diy"
+    "version": "0.0.1",
+    "homepage": "https://github.com/diy/baseit",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/diy/baseit.git"
     },
-    "license" : "Apache 2.0",
-    "dependencies": {},
-    "engine" : { "node" : ">=0.6" }
+    "main": "./lib/baseit.js",
+    "scripts": {
+        "test": "vows test/*"
+    },
+    "engines": {
+        "node": ">=0.6"
+    },
+    "dependencies": {}
 }
