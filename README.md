@@ -32,6 +32,7 @@ baseit({
 
 	console.log(a);		// "0001N6"
 });
+````
 
 ## Parameters
 ####input (Required)
