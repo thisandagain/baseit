@@ -1,7 +1,7 @@
 {
     "author": "DIY, Co. <help@diy.org> (http://diy.org)",
     "name": "baseit",
-    "description": "A node.js module for simple handling of radix 2 through 36 base encodings.",
+    "description": "A node.js module for simple(r) handling of radix 2 through 36 base encodings.",
     "keywords": [
         "Base10",
         "Base12",
