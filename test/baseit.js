@@ -122,6 +122,27 @@ suite.addBatch({
 
     },
 
+    //
+
+    'Base36 "zzzz" to Base10 (Sync)': {
+
+        topic: function() {
+            baseit({
+                input:  "zzzz", 
+                from:   36
+            }, this.callback);
+        },
+
+        'is a string': function (err, obj) {
+            assert.isString(obj);
+        },
+        
+        'expected result': function (err, obj) {
+            assert.strictEqual(obj, "1679615");
+        }
+
+    },
+
 })
 
 /**
