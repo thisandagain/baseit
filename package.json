@@ -1,29 +1,20 @@
 {
-    "author": "Andrew Sliwinski <andrew@diy.org> (http://diy.org)",
-    "name": "baseit",
-    "description": "A node.js module for simple(r) handling of radix 2 through 36 base encodings.",
-    "keywords": [
-        "Base10",
-        "Base12",
-        "Base24",
-        "Base36",
-        "encode",
-        "encoder",
-        "decode",
-        "decoder"
-    ],
-    "version": "0.0.3",
-    "homepage": "https://github.com/thisandagain/baseit",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/thisandagain/baseit.git"
-    },
-    "main": "./lib/baseit.js",
-    "scripts": {
-        "test": "vows test/*"
-    },
-    "engines": {
-        "node": ">=0.6"
-    },
-    "dependencies": {}
+  "author": "DIY, Co. (https://github.com/diy)",
+  "name": "baseit",
+  "description": "A node.js module for simple(r) handling of radix 2 through 36 base encodings.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/diy/baseit",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/diy/baseit.git"
+  },
+  "main": "./lib/baseit.js",
+  "dependencies": {},
+  "devDependencies": {
+    "vows": "=0.6.2"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">=0.6"
+  }
 }
