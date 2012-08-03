@@ -2,16 +2,20 @@
   "author": "DIY, Co. (https://github.com/diy)",
   "name": "baseit",
   "description": "A node.js module for simple(r) handling of radix 2 through 36 base encodings.",
-  "version": "0.1.0",
-  "homepage": "https://github.com/diy/baseit",
+  "version": "0.2.0",
+  "homepage": "https://github.com/thisandagain/baseit",
   "repository": {
     "type": "git",
-    "url": "git://github.com/diy/baseit.git"
+    "url": "git://github.com/thisandagain/baseit.git"
   },
-  "main": "./lib/baseit.js",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "tap ./test/*.js"
+  },
   "dependencies": {},
   "devDependencies": {
-    "vows": "=0.6.2"
+    "async": "0.1.X",
+    "tap": "0.3.X"
   },
   "optionalDependencies": {},
   "engines": {
