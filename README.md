@@ -1,6 +1,8 @@
 # Baseit
 #### Base(x) In --> Base(x) Out
 
+[![Build Status](https://secure.travis-ci.org/thisandagain/baseit.png?branch=master)](http://travis-ci.org/thisandagain/baseit)
+
 ## Install
 	npm install baseit
 
